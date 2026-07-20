@@ -36,11 +36,30 @@ const events = ref<Event[]>([
     petsAllowed: false,
     organizer: 'Carey Wales',
   },
+  {
+    id: 8888888,
+    category: 'game',
+    title: 'OAT GAME',
+    description: 'lets play OAT GAME',
+    location: 'CAMT',
+    date: 'July 25, 2026',
+    time: '11.00',
+    petsAllowed: false,
+    organizer: 'Oat za',
+  },
 ])
 </script>
 
 <template>
-  <div class="home">
+  <div class="events">
     <EventCaed v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
+
+<style scoped>
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
