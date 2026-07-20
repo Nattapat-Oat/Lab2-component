@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import EventCaed from '@/components/EventCaed.vue'
+</script>
 
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <EventCaed />
+  </div>
 </template>
